@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Brasil News</string>
+    <string name="title_news">Noticias</string>
+    <string name="title_favorites">Favoritos</string>
+</resources>
