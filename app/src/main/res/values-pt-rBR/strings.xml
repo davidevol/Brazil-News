@@ -3,4 +3,8 @@
     <string name="app_name">Brasil News</string>
     <string name="title_news">Noticias</string>
     <string name="title_favorites">Favoritos</string>
+    <string name="txt_open_link">Abrir Link</string>
+    <string name="cd_news_image">Imagem da Noticia.</string>
+    <string name="cd_favorite_icon">Favorite icon.</string>
+    <string name="share_icon">Share icon.</string>
 </resources>
