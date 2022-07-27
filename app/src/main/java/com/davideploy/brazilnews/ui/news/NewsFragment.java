@@ -11,14 +11,13 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.davideploy.brazilnews.databinding.FragmentNewsBinding;
-import com.davideploy.brazilnews.ui.adapters.NewsAdapter;
+import com.davideploy.brazilnews.ui.adapter.NewsAdapter;
 
 public class NewsFragment extends Fragment {
 
     private FragmentNewsBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         NewsViewModel newsViewModel = new ViewModelProvider(this).get(NewsViewModel.class);
 
         binding = FragmentNewsBinding.inflate(inflater, container, false);

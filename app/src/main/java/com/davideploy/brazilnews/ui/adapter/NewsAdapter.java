@@ -1,4 +1,4 @@
-package com.davideploy.brazilnews.ui.adapters;
+package com.davideploy.brazilnews.ui.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.davideploy.brazilnews.databinding.NewsItemBinding;
 import com.davideploy.brazilnews.domain.News;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -22,7 +23,6 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         NewsItemBinding binding = NewsItemBinding.inflate(layoutInflater, parent, false);
         return new ViewHolder(binding);
@@ -33,6 +33,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
         News news = this.news.get(position);
         holder.binding.tvTitle.setText(news.getTitle());
         holder.binding.tvDescription.setText((news.getDescription()));
+        Picasso.get().load(news.getImage())
+                .fit()
+                .into(holder.binding.ivThumbnail);
     }
 
     @Override
@@ -48,7 +51,5 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             super(binding.getRoot());
             this.binding = binding;
         }
-
-
     }
 }

@@ -65,6 +65,8 @@
             android:clickable="true"
             android:contentDescription="@string/cd_favorite_icon"
             android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
@@ -78,7 +80,8 @@
             android:clickable="true"
             android:contentDescription="@string/cd_favorite_icon"
             android:focusable="true"
-
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
