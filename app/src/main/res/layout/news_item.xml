@@ -70,7 +70,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
             app:layout_constraintEnd_toStartOf="@+id/ivShare"
             app:layout_constraintTop_toTopOf="@+id/btOpenLink"
-            app:srcCompat="@drawable/ic_favorite_rose_24" />
+            app:srcCompat="@drawable/ic_favorite_24" />
 
         <ImageView
             android:id="@+id/ivShare"
