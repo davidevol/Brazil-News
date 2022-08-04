@@ -6,4 +6,6 @@
     <string name="cd_news_image">News Image.</string>
     <string name="cd_favorite_icon">Favorite icon.</string>
     <string name="share_icon">Share icon.</string>
+    <string name="error_network">No internet connection.</string>
+    <string name="title_share_via">Share via</string>
 </resources>
