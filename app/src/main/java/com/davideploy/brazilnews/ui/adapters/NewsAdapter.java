@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -55,7 +56,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
             Intent i = new Intent(Intent.ACTION_SEND);
             i.setType("text/plain");
             i.putExtra(Intent.EXTRA_TEXT, news.link);
-            context.startActivity(Intent.createChooser(i, "Share"));
+            context.startActivity(Intent.createChooser(i, context.getString(R.string.title_share_via)));
         });
 
         // Favoritar noticia, instanciado pelo Fragment
