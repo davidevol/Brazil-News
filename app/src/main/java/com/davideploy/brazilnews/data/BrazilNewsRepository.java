@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class BrazilNewsRepository {
 
     //region Constantes
-    private static final String REMOTE_API_URL = "https://davideploy.github.io/matches-simulator-api/";
+    private static final String REMOTE_API_URL = "https://dd-ev.github.io/matches-simulator-api/";
     private static final String LOCAL_DB_NAME = "brazil-news";
     //endregion
 
